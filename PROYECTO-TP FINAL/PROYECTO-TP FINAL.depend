@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1593097171 source:c:\users\usuario\desktop\tp final\proyecto-tp final\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"gotoxy.h"
+
+1491400450 source:c:\users\usuario\desktop\tp final\proyecto-tp final\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1491399896 c:\users\usuario\desktop\tp final\proyecto-tp final\gotoxy.h
+
+1592922040 source:c:\users\usuario\desktop\tp final\proyecto-tp final\getrandoms.c
+	"getRandoms.h"
+
+1592921611 c:\users\usuario\desktop\tp final\proyecto-tp final\getrandoms.h
+

@@ -1,0 +1,31 @@
+GENERAL: --------------------
+
+Al principio repetiamos codigo utilizando memoria de mas (ej: buscar un cliente por dni): Modularizamos lo mas posible
+
+En ciclos de lectura en un archivo, aunque se encuentre el dato buscado, el ciclo seguia corriendo: Usamos un flag que al momento de conseguir dicho dato, se aumentaba haciendole saber al ciclo que debe parar de buscar
+
+Funcion de conseguir Nuevo id cargaba basura al ultimo cliente/consumo ingresado
+
+<-------- CLIENTES ------->
+
+Verificar que no se repita el cliente al cargarlo: Creamos una funcion de validacion comparando el nuevo DNI con los DNI de los clientes ya ingresados, se le informara al usuario que el DNI ya es existente y se le pedira ingresarlo nuevamente hasta que sea un DNI diferente
+
+Verificar que el E-mail tenga formato correcto: Creamos una funcion que recorre el arreglo de caracteres del email ingresado, hasta que alguno de ellos no coincida con '64'(@) se le informara al usuario que el E-mail no es valido y se le pedira ingresarlo nuevamente
+
+Si los datos ingresados eran erroneos los cargaba de igual forma: Pusimos un if/else, donde si los datos son erroneos, el id de la carga retornaria -1, la funcion guardar al recibir un id = -1, no lo carga
+
+<------- CONSUMOS ------->
+
+Verificar que la fecha ingresada sea correcta: Funcion de validacion de cantidad de dias segun mes elegido
+
+Verificar que el año sea bisiesto en los consumos: Hicimos una validacion que segun el año se realizan calculos para determinar si es bisiesto o no
+
+Al ser utilizada mas de una vez la Carga Aleatoria, se generaban nuevos consumos con el mismo dia, en lugar de sumarlos a los ya existentes: Hicimos un if/else que evalua si un cliente ya tiene un consumo realizado en tal fecha, si se cumple se suman los consumos
+
+En la Carga Aleatoria no se cargaban los meses por completo: Inicializamos en 31 los dias en la carga de cada mes y se le restaba una cantidad al 31 segun el mes (ej: abril (30 dias) = 31 - 1)
+
+
+
+
+
+
